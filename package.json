@@ -1,0 +1,26 @@
+{
+  "name": "padthai",
+  "private": true,
+  "version": "0.0.1",
+  "description": "poc web",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "Franz Sittampalam",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "lint-staged": {
+    "*": [
+      "ci"
+    ],
+    "*.svelte": "svelte-check"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1"
+  }
+}
